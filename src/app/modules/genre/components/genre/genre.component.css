@@ -1,0 +1,27 @@
+.button {
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(169, 168, 168, 0.15);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav a:hover {
+  color: var(--lightblue);
+}
+
+.nav a[class='active'] {
+  display: block;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  color: var(--lightblue);
+  background-color: rgba(169, 168, 168, 0.15);
+}

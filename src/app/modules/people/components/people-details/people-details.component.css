@@ -1,0 +1,42 @@
+.container {
+  display: flex;
+  margin: 15px;
+  color: var(--color);
+}
+
+.poster {
+  width: 205px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+
+.peopleDetails {
+  padding: 35px 25px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.peopleDetails p {
+  padding: 5px 0;
+}
+
+.peopleDetails h4 {
+  padding-top: 10px;
+}
+
+.peopleDetails span {
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.back {
+  margin: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px black;
+}
+

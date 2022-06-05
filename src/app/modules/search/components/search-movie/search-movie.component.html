@@ -1,0 +1,8 @@
+<div class="movie" *ngIf="movie">
+  <a [routerLink]="[movie.id]" title="{{movie.title}}">
+    <img src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" alt="{{movie.title}}">
+    <p class="title">{{movie.title}}</p>
+    <p class="vote">{{movie.vote_average}}</p>
+  </a>
+</div>
+

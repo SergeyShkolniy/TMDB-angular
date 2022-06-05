@@ -1,0 +1,6 @@
+<div class="shows">
+  <app-show *ngFor="let show of shows | paginate:{itemsPerPage: 1, currentPage: page, totalItems: 500 }"
+             [show]='show'></app-show>
+  <pagination-controls class="my-pagination" (pageChange)="pageChange($event)"></pagination-controls>
+</div>
+

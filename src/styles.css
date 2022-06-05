@@ -1,1 +1,40 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /*main*/
+  --darkblue: #0d253f;
+  --lightblue: #01b4e4;
+  --lightgreen: #90cea1;
+  --background: var(--bg-theme-light);
+  --color: var(--color-theme-light);
+  --color-link: var(--color-link-theme-light);
+
+  /*Light theme*/
+  --bg-theme-light: #fff;
+  --color-theme-light: #000;
+  --color-link-theme-light: #000;
+
+  /* Dark theme*/
+  --bg-theme-dark: #696969;
+  --color-theme-dark: #fff;
+  --color-link-theme-dark: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  background-color: var(--darkblue);
+  scroll-behavior: smooth;
+}
+
+.layout {
+  display: flex;
+  justify-content: center;
+}

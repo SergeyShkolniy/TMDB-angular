@@ -1,0 +1,164 @@
+.sidebar {
+  height: 100%;
+}
+
+.underline {
+  margin: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.sidebar-logo {
+  padding: 25px 25px 0 25px;
+}
+
+.sidebar-user {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 2px black
+}
+
+.sidebar-user span {
+  font-size: 13px;
+}
+
+.sidebar-user img {
+  width: 55px;
+}
+
+.sidebar-user-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-user-name {
+  font-size: 15px;
+}
+
+.theme-switcher-wrap {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.theme-switcher {
+  display: inline-block;
+  cursor: pointer;
+  padding: 0 10px;
+}
+
+.switch-path {
+  width: 40px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: -5px;
+  background-color: #ccc;
+  position: relative;
+}
+
+.switch-handle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--lightgreen);
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  top: -5px;
+}
+
+
+.active .switch-path {
+  background-color: #555;
+}
+
+.active .switch-handle {
+  transform: translateX(20px);
+  background-color: var(--lightblue);
+}
+
+
+.nav {
+  min-height: 80px;
+  width: 100%;
+}
+
+.nav h3 {
+  padding: 15px 0 5px 30px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.button {
+  width: 100%;
+  padding: 10px 50px;
+}
+
+.button:hover {
+  cursor: pointer;
+  background-color: rgba(169, 168, 168, 0.15);
+}
+
+.nav a {
+  color: white;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+}
+
+.nav a:hover {
+  color: var(--lightblue);
+}
+
+.nav a[class='active'] {
+  display: block;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px black;
+  color: var(--lightblue);
+  background-color: rgba(169, 168, 168, 0.15);
+}
+
+.genres {
+  min-height: 80px;
+  width: 100%;
+}
+
+.genres h3 {
+  padding: 15px 0 5px 30px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.search {
+  min-height: 80px;
+  width: 100%;
+}
+
+.search h3 {
+  padding: 15px 0 5px 30px;
+  font-size: 12px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.form {
+  display: flex;
+  margin: 15px 10px;
+}
+
+.form input {
+  width: 235px;
+  padding: 5px 3px;
+  border-radius: 5px 0 0 5px;
+  border: none;
+}
+
+.form button {
+  cursor: pointer;
+  padding: 5px 2px;
+  border: none;
+}

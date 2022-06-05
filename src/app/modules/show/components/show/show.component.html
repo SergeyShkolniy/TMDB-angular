@@ -1,0 +1,8 @@
+<div class="show" *ngIf="show">
+  <a [routerLink]="[show.id]" title="{{show.name}}">
+    <img src="https://image.tmdb.org/t/p/w500{{show.poster_path}}" alt="{{show.name}}">
+    <p class="title">{{show.name}}</p>
+    <p class="show-vote">{{show.vote_average}}</p>
+  </a>
+</div>
+

@@ -1,0 +1,48 @@
+.people {
+  height: 330px;
+  width: 205px;
+  margin: 10px 7px;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+
+.people:hover {
+  box-shadow: 0 0 10px #000;
+}
+
+.people img {
+  height: 290px;
+  width: 205px;
+  border-radius: 5px 5px 0 0;
+}
+
+.people a {
+  color: var(--color);
+  text-decoration: none;
+}
+
+.people-vote {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 0 5px 0;
+  padding: 3px 6px;
+  background-color: var(--lightblue);
+  color: white;
+  text-shadow: 0 1px 1px black;
+}
+
+.title {
+  margin-top: -4px;
+  padding: 0 2px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

@@ -1,0 +1,62 @@
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <a routerLink="">
+      <img src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg"
+           alt="logo">
+    </a>
+  </div>
+
+  <div class="underline"></div>
+
+  <div class="sidebar-user">
+    <div>
+      <img src="https://www.pngarts.com/files/6/User-Avatar-in-Suit-PNG.png" alt="user" />
+    </div>
+    <div class="sidebar-user-column">
+      <div>
+        <p class="sidebar-user-name">Sergey Shkolniy</p>
+        <span>Odessa, UA</span>
+      </div>
+      <div class="theme-switcher-wrap">
+        <span>light</span>
+        <label [ngClass]="(storedTheme === 'theme-dark')?'theme-switcher active' : 'theme-switcher'"
+               (click)="setTheme()">
+
+          <div class="switch-path">
+            <div class="switch-handle"></div>
+          </div>
+
+        </label>
+        <span>dark</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="underline"></div>
+
+  <div class="nav">
+    <h3>media</h3>
+    <a [routerLink]="['movies']" routerLinkActive='active'>
+      <div class="button">Movies</div>
+    </a>
+    <a [routerLink]="['shows']" routerLinkActive='active'>
+      <div class="button">TV Shows</div>
+    </a>
+    <a [routerLink]="['peoples']" routerLinkActive='active'>
+      <div class="button">People</div>
+    </a>
+  </div>
+  <div class="underline"></div>
+  <div class="genres">
+    <h3>genres</h3>
+    <app-genres></app-genres>
+  </div>
+  <div class="underline"></div>
+  <div class="search">
+    <h3>search</h3>
+    <form [formGroup]="form" class="form">
+      <div><label><input type="text" formControlName="search" placeholder="search..."></label></div>
+      <button [routerLink]="['search']"  (click)= "search()">search</button>
+    </form>
+  </div>
+</div>

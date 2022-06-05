@@ -1,0 +1,27 @@
+<button class="back" (click)="back()" >back</button>
+<div class="container" *ngIf="searchMovieDetails">
+
+  <div>
+    <img class="poster" src="https://image.tmdb.org/t/p/w500{{searchMovieDetails.poster_path}}"
+         alt="{{searchMovieDetails.original_title}}" title="{{searchMovieDetails.original_title}}">
+  </div>
+  <div class="searchMovieDetails">
+    <h2 class="title">{{searchMovieDetails.original_title}}</h2>
+    <p><span>Release date:</span>{{searchMovieDetails.release_date}}</p>
+    <p><span>Runtime:</span>{{searchMovieDetails.runtime}} min</p>
+    <p><span>IMDB:</span>{{searchMovieDetails.vote_average}}</p>
+    <p><span>Budget:</span>{{searchMovieDetails.budget}} $</p>
+    <p><span>Revenue:</span>{{searchMovieDetails.revenue}} $</p>
+    <h4>Overview:</h4>
+    <div>{{searchMovieDetails.overview}}</div>
+  </div>
+</div>
+
+<div class="casts">
+  <div *ngFor="let cast of casts" class="cast">
+    <img src="https://image.tmdb.org/t/p/w500{{cast.profile_path}}" alt="{{cast.name}}">
+    <div class="name">{{cast.name}}</div>
+  </div>
+</div>
+
+

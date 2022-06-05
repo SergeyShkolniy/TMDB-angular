@@ -1,0 +1,6 @@
+<div class="peoples">
+  <app-people *ngFor="let people of peoples | paginate:{itemsPerPage: 1, currentPage: page, totalItems: 500 }"
+             [people]='people'></app-people>
+  <pagination-controls class="my-pagination" (pageChange)="pageChange($event)"></pagination-controls>
+</div>
+

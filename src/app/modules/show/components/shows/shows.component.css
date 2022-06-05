@@ -1,0 +1,15 @@
+.shows {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 25px 0 15px 0;
+}
+
+.my-pagination /deep/ .ngx-pagination .current {
+  background: var(--lightblue);
+  border-radius: 5px 0 5px 0;
+  margin-top: 25px;
+  font-size: 15px;
+}

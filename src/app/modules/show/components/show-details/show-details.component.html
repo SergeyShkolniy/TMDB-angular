@@ -1,0 +1,27 @@
+<button class="back" (click)="back()" >back</button>
+<div class="container" *ngIf="showDetails">
+
+  <div>
+    <img class="poster" src="https://image.tmdb.org/t/p/w500{{showDetails.poster_path}}"
+         alt="{{showDetails.name}}" title="{{showDetails.name}}">
+  </div>
+  <div class="showDetails">
+    <h2 class="title">{{showDetails.name}}</h2>
+    <p><span>Release date:</span>{{showDetails.first_air_date}}</p>
+    <p><span>IMDB:</span>{{showDetails.vote_average}}</p>
+    <p><span>Status:</span>{{showDetails.status}}</p>
+    <p><span>Number_of_seasons:</span>{{showDetails.number_of_seasons}}</p>
+    <p><span>Number_of_episodes:</span>{{showDetails.number_of_episodes}}</p>
+    <h4>Overview:</h4>
+    <div>{{showDetails.overview}}</div>
+  </div>
+</div>
+
+
+<div class="casts">
+  <div *ngFor="let cast of casts" class="cast">
+    <img src="https://image.tmdb.org/t/p/w500{{cast.profile_path}}" alt="{{cast.name}}">
+    <div class="name">{{cast.name}}</div>
+  </div>
+</div>
+

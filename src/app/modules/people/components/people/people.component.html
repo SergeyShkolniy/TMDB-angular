@@ -1,0 +1,8 @@
+<div class="people" *ngIf="people">
+  <a [routerLink]="[people.id]" title="{{people.name}}">
+    <img src="https://image.tmdb.org/t/p/w500{{people.profile_path}}" alt="{{people.name}}">
+    <p class="title">{{people.name}}</p>
+    <p class="people-vote">{{people.popularity}}</p>
+  </a>
+</div>
+

@@ -1,0 +1,18 @@
+<button class="back" (click)="back()" >back</button>
+<div class="container" *ngIf="peopleDetails">
+
+  <div>
+    <img class="poster" src="https://image.tmdb.org/t/p/w500{{peopleDetails.profile_path}}"
+         alt="{{peopleDetails.name}}" title="{{peopleDetails.name}}">
+  </div>
+  <div class="peopleDetails">
+    <h2 class="title">{{peopleDetails.name}}</h2>
+    <p><span>Birthday:</span>{{peopleDetails.birthday}}</p>
+    <p><span>Place of birth:</span>{{peopleDetails.place_of_birth}}</p>
+    <p><span>Popularity:</span>{{peopleDetails.popularity}}</p>
+    <h4>Biography:</h4>
+    <div>{{peopleDetails.biography}}</div>
+  </div>
+</div>
+
+

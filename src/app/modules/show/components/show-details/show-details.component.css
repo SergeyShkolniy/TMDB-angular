@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  margin: 15px;
+  color: var(--color);
+}
+
+.poster {
+  width: 205px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #000;
+}
+
+.showDetails {
+  padding: 35px 25px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.showDetails p {
+  padding: 5px 0;
+}
+
+.showDetails h4 {
+  padding-top: 10px;
+}
+
+.showDetails span {
+  font-weight: 500;
+  padding-right: 15px;
+}
+
+.back {
+  margin: 15px;
+  padding: 5px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 1px black;
+}
+
+.casts {
+  display: flex;
+  overflow: auto ;
+
+}
+
+.cast {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+
+
+}
+
+.cast img {
+  display: block;
+  width: 150px;
+  border-radius: 5px;
+  padding-bottom: 10px;
+}
+
+.name {
+  color: var(--color);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
